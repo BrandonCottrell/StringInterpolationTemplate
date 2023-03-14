@@ -28,52 +28,63 @@ public class StringInterpolationService : IStringInterpolationService
 
     public string Number02()
     {
-        throw new NotImplementedException();
+        var today = _date.Now;
+        return $"{today:yyyy.MM.dd}";
     }
 
     public string Number03()
     {
-        throw new NotImplementedException();
+        var today = _date.Now;
+        return $"Day {today:dd} of {today:MMMM, yyyy}";
     }
 
     public string Number04()
     {
-        throw new NotImplementedException();
+        var today = _date.Now;
+        return $"Year: {today:yyyy}, Month:{today: MM}, Day:{today: dd}";
     }
 
     public string Number05()
     {
-        throw new NotImplementedException();
+        var today = _date.Now;
+        return $"{today,10:dddd}";
     }
 
     public string Number06()
     {
-        throw new NotImplementedException();
+        var today = _date.Now;
+        return $"{today,10:t}{today,10:dddd}";
     }
 
     public string Number07()
     {
-        throw new NotImplementedException();
+        var today = _date.Now;
+        return $"h:{today:hh}, m:{today:mm}, s:{today:ss}";
     }
 
     public string Number08()
     {
-        throw new NotImplementedException();
+        var today = _date.Now;
+        return $"{today:yyyy.MM.dd}.{today:hh.mm.ss}";
     }
 
     public string Number09()
     {
-        throw new NotImplementedException();
+        var pi = Math.PI;
+        return $"{pi:C2}";
     }
 
     public string Number10()
     {
-        throw new NotImplementedException();
+        var pi = Math.PI;
+        return $"{pi,10:N3}";
     }
 
     public string Number11()
     {
-        throw new NotImplementedException();
+        int intValue = 2023;
+        string currentYear = intValue.ToString("X3");
+        return $"{currentYear}";
     }
 
     //2.2019.01.22
